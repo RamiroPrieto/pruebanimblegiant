@@ -258,6 +258,7 @@ q{
 
 .contenido{
     color: var(--color);
+    text-transform: lowercase;
 }
 
 .boton__quests:focus-within{
@@ -346,7 +347,7 @@ q{
     width: 100%;
     text-align: left;
     gap: 15px;
-    background: black;
+    background: rgba(0, 0, 0, 0.397);
 }
 
 .adicional{
