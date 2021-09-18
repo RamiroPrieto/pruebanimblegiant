@@ -1,0 +1,397 @@
+body{
+    background-color: rgb(70, 69, 69);
+    /* background-image: url('/img/fondo.png'); */
+}
+
+
+:root{
+    --selected: #E09200;
+    --background: #2826208f;
+    --color:rgb(121, 120, 120);
+}
+
+
+
+
+
+.contenedor{
+    color: var(--color);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 30%;
+    margin-top: 100px;
+}
+
+/* BOTONES ABAJO */
+
+.botones{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.botones__back{
+    width: 50px;
+    height: 40px;
+}
+
+.botones__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: none;
+}
+
+.cuadro__contenedor{
+    width: 1000px;
+    margin: auto;
+}
+
+.skill__tree{
+    color: white;
+    font-size: 20px;
+}
+
+ul{
+    background-color: var(--background);
+    padding: 0px;
+    /* padding: 15px 10px; */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton__nav{
+    border: none;
+    background: transparent;
+    color: var(--color);
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    padding: 13px 10px;
+}
+
+.boton__nav:focus-within{
+    border-top: 2px solid var(--selected);
+    border-bottom: 2px solid var(--selected);
+    color: var(--selected);
+}
+
+.especial:focus-within{
+    border: none;
+}
+
+.boton__nav:hover{
+    color: var(--selected);
+}
+
+.quests{
+    /* display: none; */
+}
+
+.especial{
+    padding: 0%;
+    width: 65px;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.especial:hover{
+    background-color: rgb(22, 22, 22);
+}
+
+q{
+    padding-bottom: 3px;
+}
+
+.especial__interior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SKILLS  */
+
+.skills{
+    display: flex;
+    padding: 0px;
+    gap: 20px;
+}
+
+.imagen{
+    text-align: center;
+    background-color: var(--background);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen:hover{
+    background-color: var(--selected);
+}
+
+/* .contenedor__imagen:hover{
+    border: 1px solid var(--selected);
+    padding: 40px;
+} */
+
+
+.barra{
+    background-color: var(--background);
+    padding: 10px;
+}
+
+.title{
+    background-color: var(--background);
+    padding: 0px 40px;
+}
+
+.title:hover{
+    color: var(--selected);
+}
+
+.title__principal{
+    font-size: 40px;
+    margin: 15px 0px;
+}
+
+.barra{
+    background-color: var(--background);
+    padding: 8px;
+    padding: 10px 15px;
+}
+
+.barra__contenedor{
+    height: 15px;
+    width: 97%;
+    border: 1.5px solid rgb(121, 120, 120);
+    padding: 4px 4px;
+}
+
+.barra__contenedor:hover{
+    border-color: var(--selected);
+}
+
+.barra__interior{
+    height: 100%;
+    background-color: rgb(121, 120, 120);
+    width: 80%;
+}
+
+.barra__interior:hover{
+    background-color: var(--selected);
+}
+
+.barra__power{
+    width: 60%;
+}
+
+.barra__medal{
+    width: 30%;
+}
+
+.barra__agility{
+    width: 90%;
+}
+
+.skills__imagen{
+    width: 100px;
+    height: 100px;
+}
+
+.item{
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    gap: 7.5px;
+    flex-direction: column;
+}
+
+.level:hover{
+    color: var(--selected);
+    /* background-color: rgb(172, 172, 172); */
+}
+
+.level{
+    display: flex;
+    background-color: var(--background);
+    padding: 0px 15px;
+    align-items: center;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.skill__points{
+    height: 50px;
+}
+
+/* QUESTS */
+
+.quests{
+    display: flex;
+    color: white;
+    gap: 15px;
+    height: 600.438px;
+}
+
+.boton__quests{
+    border: none;
+    background: none;
+    padding: 0px;
+    text-align: left;
+    color: var(--color);
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.objetive{
+    color: var(--selected);
+}
+
+.contenido{
+    color: var(--color);
+}
+
+.boton__quests:focus-within{
+    background-color: var(--selected);
+    color: black;
+}
+
+.boton__quests:hover{
+    background: var(--selected);
+}
+
+.izquierda__contenido{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    /* text-align: left; */
+    height: 100%;
+    font-size: 20px;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+.izquierda__contenido::-webkit-scrollbar{
+    width: 15px;
+    height: 0px;
+}
+
+.izquierda__contenido::-webkit-scrollbar-thumb{
+    background-color: var(--selected);
+}
+
+.izquierda__titulo{
+    background-color: var(--background);
+    height: 40px;
+    color: var(--selected);
+    display: flex;
+    align-items: center;
+    padding:0px 10px;
+    font-size: 25px;
+}
+
+.izquierda{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+.derecha{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.derecha__titulo{
+    background-color: var(--background);
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+
+.story{
+    color: var(--selected);
+}
+
+.principal{
+    font-size: 25px;
+    color: white;
+}
+
+.derecha__contenido{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.derecha__footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: left;
+    gap: 15px;
+    background: black;
+}
+
+.adicional{
+    padding-right: 30px;
+}
+
+.main{
+    background-color: var(--background);
+    padding: 15px 30px;
+    height: 100%;
+}
+
+
+/* DEFAULT PAGE */
+
+.fixing{
+    width: 40px;
+    height: 40px;
+}
+
+.default{
+    width: 100%;
+    height: 600.438px;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.default{
+    display: none;
+}
+
+.quests{
+    display: none;
+    /* display: flex; */
+}
+
+.skills{
+    display: flex;
+    /* display: none; */
+}
+
+.none{
+    display: none;
+}
+
+.block{
+    display: flex;
+}

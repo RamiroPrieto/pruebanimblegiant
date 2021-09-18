@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cuadro__contenedor">
+            <nav>
+                <ul>
+                    <button class="especial boton__nav"><div class="especial__interior"><img class="q" src="img/Q.PNG" alt=""></div></button>
+                    <button class="boton__nav" id="map" onclick="selected('default')">MAP</button>
+                    <button class="boton__nav" id="quests" onclick="selected('quests')">QUEST</button>
+                    <button class="boton__nav" id="inventory" onclick="selected('default')">INVENTORY</button>
+                    <button class="boton__nav" id="blueprint" onclick="selected('default')">BLUEPRINT</button>
+                    <button class="boton__nav" onclick="selected('skills')" id="skills">SKILLS</button>
+                    <button class="especial boton__nav"><div class="especial__interior"><img src="img/E.PNG" alt=""></div></button>
+                </ul>
+            </nav>
+            <div class="skills" id="pantalla__skills">
+                <div class="item">
+                    <div class="title">
+                        <h2 class="title__principal">SURVIVOR</h2>
+                        <h3 class="title__secundario">LEVEL</h3>
+                    </div>
+                    <div class="imagen">
+                        <div class="contenedor__imagen">
+                            <img class="skills__imagen" src="img/Icon_medal.svg" alt="Icono medalla">
+                        </div>
+                    </div>
+                    <div class="level">
+                        <p>LEVEL</p>
+                        <P>11</P>
+                    </div>
+                    <div class="level">
+                        <p>LEVEL</p>
+                        <P>21660</P>
+                    </div>
+                    <div class="level">
+                        <p>NEXT LEVEL</p>
+                        <P>65000</P>
+                    </div>
+                    <div class="barra">
+                        <div class="barra__contenedor">
+                            <div class="barra__interior barra__medal"></div>
+                        </div>
+                    </div>
+                    <div class="level skill__points">
+                        <p>SKILL POINTS</p>
+                        <P>0</P>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <h2 class="title__principal">AGILITY</h2>
+                        <h3 class="title__secundario">LEVEL</h3>
+                    </div>
+                    <div class="imagen">
+                        <div class="contenedor__imagen">
+                            <img class="skills__imagen" src="img/Icon_Agility.svg" alt="Icono AGILITY">
+                        </div>
+                    </div>
+                    <div class="level">
+                        <p>LEVEL</p>
+                        <P>10</P>
+                    </div>
+                    <div class="level">
+                        <p>LEVEL</p>
+                        <P>40000</P>
+                    </div>
+                    <div class="level">
+                        <p>NEXT LEVEL</p>
+                        <P>50000</P>
+                    </div>
+                    <div class="barra">
+                        <div class="barra__contenedor">
+                            <div class="barra__interior barra__agility "></div>
+                        </div>
+                    </div>
+                    <div class="level skill__points">
+                        <p>SKILL POINTS</p>
+                        <P>1</P>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <h2 class="title__principal">POWER</h2>
+                        <h3 class="title__secundario">LEVEL</h3>
+                    </div>
+                    <div class="imagen">
+                        <div class="contenedor__imagen">
+                            <img class="skills__imagen" src="img/Icon_power.svg" alt="Icono POWER">
+                        </div>
+                    </div>
+                    <div class="level">
+                        <p>LEVEL</p>
+                        <P>11</P>
+                    </div>
+                    <div class="level">
+                        <p>LEVEL</p>
+                        <P>32500</P>
+                    </div>
+                    <div class="level">
+                        <p>NEXT LEVEL</p>
+                        <P>65000</P>
+                    </div>
+                    <div class="barra">
+                        <div class="barra__contenedor">
+                            <div class="barra__interior barra__power"></div>
+                        </div>
+                    </div>
+                    <div class="level skill__points">
+                        <p>NEXT LEVEL</p>
+                        <P>0</P>
+                    </div>
+                </div>
+            </div>
+            <div class="quests" id="pantalla__quests">
+                <div class="izquierda">
+                    <div class="izquierda__titulo">
+                        QUESTS
+                    </div>
+                    <div class="izquierda__contenido">
+                        <button class="boton__quests">PRINCIPAL QUESTS</button>
+                        <button class="boton__quests">GUNSLINGER</button>
+                        <button class="boton__quests">INCENCE HERBS</button>
+                        <button class="boton__quests">WITCH QUEEN</button>
+                        <button class="boton__quests">REPERT THE GUNSMITH</button>
+                        <button class="boton__quests">FOUNTAIN</button>
+                        <button class="boton__quests">RADIO STATION</button>
+                        <button class="boton__quests">LEGLESS SPIDER</button>
+                        <button class="boton__quests">BANDAGES AND MEDS</button>
+                        <button class="boton__quests">LIGHTER GAS</button>
+                        <button class="boton__quests">COFFEE</button>
+                        <button class="boton__quests">CAYONS FOR THE KIDS</button>
+                        <button class="boton__quests">CREASE AND DESIST</button>
+                        <button class="boton__quests">ON THE HOOKS</button>
+                        <button class="boton__quests">CROSSROAD</button>
+                        <button class="boton__quests">A TRAITOR AMONG US</button>
+                        <button class="boton__quests">KILL THE DRAGON</button>
+                        <button class="boton__quests">SAVE THE PRINCES</button>
+                        <button class="boton__quests">FINAL QUEST</button>
+                    </div>
+                </div>
+                <div class="derecha">
+                    <div class="derecha__titulo">
+                        <div class="principal">
+                            PRINCIPAL QUESTS
+                        </div>
+                        <div class="story">
+                            STORY QUESTS
+                        </div>
+                    </div>
+                    <div class="derecha__contenido">
+                        <div class="main">
+                            <p class="objetive">OBJETIVE . TRAKER</p>
+
+                            <h3 class="subtitulo">MEET WITH MICHAEL IN THE SEWERS</h3>
+
+                            <p class="contenido">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                                standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            </p>
+                        </div>
+                        <div class="derecha__footer">
+                            <div class="adicional">
+                                <p>REWARDS</p>
+                                <p>YOU WILL RECEIVE</p>
+                                <p>20000</p>
+                            </div>
+                            <div class="adicional">
+                                <p>QUEST DETAILS</p>
+                                <p>ASSIGNED BY <span>TROY</span></p>
+                                <p>LOCATION <span>OLD TOWN</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="default" id="pantalla__default">
+                <img class="fixing" src="img/fixing.png" alt="">
+                <div class="default__title">
+                    We are working in this site
+                </div>
+            </div>
+            <div class="botones">
+                <button class="botones__item" onclick="selected('skills')">
+                    <img class="botones__back" src="img/back.svg" alt="">
+                    <div class="skill__tree">
+                        VIEW SKILL TREE
+                    </div>
+                </button>
+                <div class="botones__item">
+                    <img src="https://img.icons8.com/windows/32/ffffff/esc.png"/>
+                    <div class="skill__tree">
+                        BACK
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
