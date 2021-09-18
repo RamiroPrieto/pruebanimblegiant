@@ -249,16 +249,34 @@ q{
     text-align: left;
     color: var(--color);
     width: 100%;
-    padding: 10px 30px;
+    padding: 10px 38px;
+    position: relative;
+}
+
+.boton__circulo{
+    position: absolute;
+    left: 5px;
+    bottom: 10.5px;
+    display: none;
 }
 
 .objetive{
     color: var(--selected);
 }
 
+.imagen__circulo{
+    padding-bottom: 2px;
+}
+
+.subtitulo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 .contenido{
     color: var(--color);
-    text-transform: lowercase;
+    padding-left: 30px;
 }
 
 .boton__quests:focus-within{
